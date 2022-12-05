@@ -93,6 +93,11 @@ def part_two(lines: list[str]) -> int:
 
 
 def main():
+    with open("example.txt") as f:
+        data = f.read().splitlines()
+    print(part_one(data))
+    print(part_two(data))
+
     with open("input.txt") as f:
         data = f.read().splitlines()
     print(part_one(data))
